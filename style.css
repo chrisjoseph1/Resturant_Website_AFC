@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('chic.png'); /* Background image */
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.login-box {
+    width: 400px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8); /* White background */
+    opacity: 0.8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: auto; /* Center horizontally and vertically */
+}
+
+h5, h6 {
+    text-align: left;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
+form input {
+    width: calc(100% - 14px);
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 10px;
+}

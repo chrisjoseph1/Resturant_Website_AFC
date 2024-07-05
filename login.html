@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Login page</title>
+    <script>
+        function validateForm() {
+            var username = document.forms["loginForm"]["username"].value;
+            var password = document.forms["loginForm"]["password"].value;
+
+            // Check if username and password match the criteria
+            if (username === 'afc_kengeri' && password === '12345678') {
+                // Redirect to the home page
+                window.location.href = 'additem.html';
+                return false; // Prevent form submission
+            } else {
+                alert("Not an employee");
+                window.location.href = 'index.html';
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Logo -->
+    <nav class="nav bd-container"></nav>
+    <div class="logo">
+        <a href="#" id="logo-link"><img src="assets/img/logo.png" alt="Logo"></a>
+    </div>
+    <!-- Login form -->
+    <form name="loginForm" onsubmit="return validateForm()" class="login-box">
+        <b><h2>Login to Portal</h2></b>
+        <h6>Username:</h6><input type="text" name="username" required>
+        <h6>Password:</h6><input type="password" name="password" required>
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
